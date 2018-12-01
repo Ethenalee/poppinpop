@@ -1,4 +1,4 @@
-
+var money = process.argv[2];
 
 function recycle(money) {
   var bottleCost = 2;
@@ -21,10 +21,8 @@ function recycle(money) {
     totalCaps = (fromBottle + fromCap + leftCap);
   }
 
-  return total;
+  console.log(total);
 }
 
-console.log(recycle(10));
-console.log(recycle(20));
-console.log(recycle(30));
-console.log(recycle(40));
+recycle(money);
+
