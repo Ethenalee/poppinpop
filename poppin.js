@@ -25,7 +25,7 @@ function recycle(money) {
     totalCaps = (fromBottle + fromCap + leftCap);
   }
 
-  console.log("Total Bottles: ", total, "\n", "Total Earned: ", "\n", "Bottles: ", totalfromBottle, "\n", "Caps: ", totalfromCap);
+  console.log("Total Bottles: ", total, "\n", "Remaining Bottles: ", totalBottles, "\n", "Remaining Caps: ", totalCaps, "\n", " Total Earned: ", "\n", "Bottles: ", totalfromBottle, "\n", "Caps: ", totalfromCap);
 }
 
 recycle(money);
