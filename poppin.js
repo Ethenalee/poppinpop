@@ -10,6 +10,8 @@ function recycle(money) {
   var fromCap = 0;
   var leftCap = 0;
   var leftBottle = 0;
+  var totalfromBottle = 0;
+  var totalfromCap = 0;
 
   while (totalBottles > 1 || totalCaps > 3) {
     fromBottle = Math.floor(totalBottles / 2);
@@ -17,11 +19,13 @@ function recycle(money) {
     leftBottle = totalBottles % 2 ;
     leftCap = totalCaps % 4;
     total += (fromCap + fromBottle);
+    totalfromCap += fromCap;
+    totalfromBottle += fromBottle;
     totalBottles = (fromBottle + fromCap + leftBottle);
     totalCaps = (fromBottle + fromCap + leftCap);
   }
 
-  console.log(total);
+  console.log("Total Bottles: ", total, "\n", "Total Earned: ", "\n", "Bottles: ", totalfromBottle, "\n", "Caps: ", totalfromCap);
 }
 
 recycle(money);
